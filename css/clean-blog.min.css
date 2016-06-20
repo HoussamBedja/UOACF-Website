@@ -20,7 +20,7 @@
     position: center;
     border: 2px solid #fff;
     text-align: center;
-    transition: all 0.3s ease 0s;
+    transition: all 0.5s ease 0s;
 }
 
 .button:hover {
@@ -36,4 +36,12 @@
 .textheading {
 	margin: 120px auto 25px;
 	padding: 27px;
+}
+
+.video {
+	margin-top: 70px;
+}
+
+iframe{
+	margin-top: 30px;
 }
