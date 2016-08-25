@@ -1,0 +1,9 @@
+.textheading a{
+margin-bottom: 25px;
+margin-top: 50px;
+}
+
+.textheading p{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
