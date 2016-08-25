@@ -1,0 +1,6 @@
+For each new post:
+
+Make post tab link to latest post on all pages.
+Update the post archive code for every article to include the new post.
+** Main post link must alway link to latest post for all other articles.
+Update Post DB to know what file refers to what article
