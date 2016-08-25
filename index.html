@@ -9,8 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ACF UOttawa</title>
+    <title>ACF uOttawa</title>
 
+    <!-- home css-->
+    <link href="homestyle.css" rel="stylesheet">
+    
+    <!-- Bar CSS -->
+    <link href="bar/goalProgress.css" rel="stylesheet">
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -69,7 +75,7 @@
                         <a href="about.html">Meet the team</a>
                     </li>
                     <li>
-                        <a href="about.html">Contact US</a>
+                        <a href="contact.html">Contact US</a>
                     </li>
 
                 </ul>
@@ -83,7 +89,7 @@
     <!-- Set your background image for this header on the line below. -->
     <header class="intro-header" style="background-image: url('img/home4.jpg')">
         <div class="container">
-            <div class="row">
+            <div class="row">                
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
                         <div class ="textheading">
@@ -91,6 +97,12 @@
                             <hr class="small">
                             <span class="subheading ">Eduardo Galeano</span>
                             <a class="btn button" href="http://team45.actionagainsthungerevents.ca/uottawa">DONATE</a>
+                                            
+                            
+                            <div id="sample_goal"></div>
+                            <p><small><small><i>Reset Sept 1st 2016. Last updated Sept 1st 2016. Goal: 8000$. Raised: 0$ *Excludes online campaign</i></small></small></p>
+
+
                             <div class = image >
                             <img src="img/logo.png" width="25%" height="auto">
                             </div>
@@ -100,10 +112,11 @@
             </div>
         </div>
     </header>
-
+    
     <!-- Main Content -->
-    <div class ="row">
+    <div class ="row">    
             <div class = "video col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
                 <h1 align="center">Meet Action Against hunger</h1>
                 <div style ="margin-top:50px" class="embed-responsive embed-responsive-16by9">
                     <iframe src="https://www.youtube.com/embed/TUEBf9-oxcs" frameborder="0" allowfullscreen></iframe>
@@ -114,7 +127,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Want to get in touch with me? Fill out the form below to send me a message and I will try to get back to you within 24 hours!</p>
+                <p>Want to get in touch with us? Fill out the form below to send us a message and we will try to get back to you within 24 hours!</p>
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
@@ -167,6 +180,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <ul class="list-inline text-center">
+<!--
                         <li>
                             <a href="#">
                                 <span class="fa-stack fa-lg">
@@ -175,8 +189,9 @@
                                 </span>
                             </a>
                         </li>
+-->
                         <li>
-                            <a href="#">
+                            <a href="https://www.facebook.com/uottawaacf/">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
                                     <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -184,15 +199,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="https://www.instagram.com/uottawaacf/">
                                 <span class="fa-stack fa-lg">
                                     <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                    <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                                 </span>
                             </a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; Your Website 2014</p>
+                    <p class="copyright text-muted">Copyright &copy; uoacf 2016</p>
                 </div>
             </div>
         </div>
@@ -206,6 +221,20 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+    
+     <!-- Bar -->
+    <script src="bar/goalProgress.js"></script>
+    <script src="bar/goalProgress.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#sample_goal').goalProgress({
+                goalAmount: 8000,
+                currentAmount: 3000,
+                textBefore: '$',
+                textAfter: ' raised'
+            });
+        });
+    </script>
 
 </body>
 
