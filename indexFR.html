@@ -9,8 +9,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Contact Us</title>
+    <title>ACF uOttawa</title>
 
+    <!-- home css-->
+    <link href="homestyle.css" rel="stylesheet">
+    
+    <!-- Bar CSS -->
+    <link href="bar/goalProgress.css" rel="stylesheet">
+    
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -33,7 +39,7 @@
 
 <body>
 
-   <!-- Navigation  .-->
+    <!-- Navigation  .-->
     <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,8 +50,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="contact.html">En </a> 
-                <a class="navbar-brand" href="contactFR.html">Fr</a>
+                <a class="navbar-brand" href="index.html">En </a> 
+                <a class="navbar-brand" href="indexFR.html">Fr</a>
                
 
             </div>
@@ -54,22 +60,22 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="indexFR.html">Accueil</a>
                     </li>
                     <li>
-                        <a href="post.html">News</a>
+                        <a href="postFR.html">Nouvelles</a>
                     </li>
                     <li>
-                        <a href="http://team45.actionagainsthungerevents.ca/uottawa">Donate</a>
+                        <a href="http://team45.actionagainsthungerevents.ca/uottawa">Faire un Don</a>
                     </li>
                     <li>
-                        <a href="events.html">Events</a>
+                        <a href="eventsFR.html">Évènements</a>
                     </li>
                     <li>
-                        <a href="about.html">Meet the team</a>
+                        <a href="aboutFR.html">L'Équipe</a>
                     </li>
                     <li>
-                        <a href="contact.html">Contact US</a>
+                        <a href="contactFR.html">Contactez Nous</a>
                     </li>
 
                 </ul>
@@ -78,57 +84,79 @@
         </div>
         <!-- /.container -->
     </nav>
-    <!-- Page Header -->
+
+  <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-<!--    <header class="intro-header" style="background-image: url('img/contact-bg.jpg')">-->
-    <header class="intro-header" style="background-color: #5cafeb">
+    <header class="intro-header" style="background-image: url('img/home4.jpg')">
         <div class="container">
-            <div class="row">
+            <div class="row">                
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="page-heading">
-                        <h1>Contact Us</h1>
-                        <hr class="small">
-                        <span class="subheading">Have questions? Send them our way.</span>
+                        <div class ="textheading">
+                            <h3><span class="subheading" style="font-family:cursive">"Many small people, in small places, doing small things, can change the world."</span></h3>
+                            <hr class="small">
+                            <span class="subheading ">Eduardo Galeano</span>
+                            <a class="btn button" href="http://team45.actionagainsthungerevents.ca/uottawa"><small>Faire un don</small></a>
+                                            
+                            
+                            <div id="sample_goal"></div>
+                            <p><small><small><small><i>Réinitialiser le 1 septembre 2016. Dernière mise à jour le 1 septembre 2016. Objectif: 8000$. * Exclut campagne en ligne</i></small></small></small></p>
+
+
+                            <div class = image >
+                            <img src="img/logo.png" width="25%" height="auto">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    
     <!-- Main Content -->
+    <div class ="row">    
+            <div class = "video col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                <h1 align="center">Rencontrez Action Contre la Faim</h1>
+                <div style ="margin-top:50px" class="embed-responsive embed-responsive-16by9">
+                    <iframe src="https://www.youtube.com/embed/MUzExQy7UlU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Fill out the form below to send us a message and we will try to get back to you within 24 hours!</p>
+                <p>Voulez-vous nous contactez? Remplissez le formulaire ci-dessous!</p>
                 <!-- Contact Form - Enter your email address on line 19 of the mail/contact_me.php file to make this form work. -->
                 <!-- WARNING: Some web hosts do not allow emails to be sent through forms to common mail hosts like Gmail or Yahoo. It's recommended that you use a private domain email address! -->
                 <!-- NOTE: To use the contact form, your site must be on a live web host with PHP! The form will not work locally! -->
                 <form name="sentMessage" id="contactForm" novalidate>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                            <label>Nom</label>
+                            <input type="text" class="form-control" placeholder="Nom" id="name" required data-validation-required-message="Nom olbigatoire.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Email Address</label>
-                            <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                            <label>Adresse E-mail</label>
+                            <input type="email" class="form-control" placeholder="Adresse E-mail" id="email" required data-validation-required-message="Adresse E-mail obligatoire.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
-                            <label>Phone Number</label>
-                            <input type="tel" class="form-control" placeholder="Phone Number" id="phone" required data-validation-required-message="Please enter your phone number.">
+                            <label>Numéro de téléphone</label>
+                            <input type="tel" class="form-control" placeholder="Numéro de téléphone" id="phone" required data-validation-required-message="Numérode de téléphone obligatoire.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 floating-label-form-group controls">
                             <label>Message</label>
-                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                            <textarea rows="5" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Message obligatoire."></textarea>
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
@@ -136,7 +164,7 @@
                     <div id="success"></div>
                     <div class="row">
                         <div class="form-group col-xs-12">
-                            <button type="submit" class="btn btn-default">Send</button>
+                            <button type="submit" class="btn btn-default">Envoyer</button>
                         </div>
                     </div>
                 </form>
@@ -193,6 +221,20 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/clean-blog.min.js"></script>
+    
+     <!-- Bar -->
+    <script src="bar/goalProgress.js"></script>
+    <script src="bar/goalProgress.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#sample_goal').goalProgress({
+                goalAmount: 8000,
+                currentAmount: 3000,
+                textBefore: '$',
+                textAfter: ' raised'
+            });
+        });
+    </script>
 
 </body>
 
