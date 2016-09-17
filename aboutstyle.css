@@ -1,6 +1,11 @@
 header.intro-header {
 /*    background-image: url('img/teampic.jpg');*/
-   background-color: #969696;
+   background-color: #392aa7;
     background-size: cover;
+    
+}
+
+a:hover { 
+    color: #ffe294;
     
 }

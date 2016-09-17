@@ -5,7 +5,7 @@ body {font-family: Verdana, sans-serif;}
 .month {
     padding: 30px 5px;
     width: 100%;
-    background: #1abc9c;
+    background: #f48d00;
 }
 
 /* Month list */
@@ -77,6 +77,6 @@ body {font-family: Verdana, sans-serif;}
     padding: 5px;
     padding-left: 50px;
     padding-right: 55px;
-    background: #2fb8be;
+    background: #0acb19;
     color: white !important
 }
