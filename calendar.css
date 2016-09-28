@@ -75,8 +75,17 @@ body {font-family: Verdana, sans-serif;}
 /* Highlight the "current" day */
 .days li .clubweek {
     padding: 5px;
-    padding-left: 50px;
-    padding-right: 55px;
+    padding-left: 45px;
+    padding-right: 50px;
     background: #0acb19;
+    color: white !important
+}
+
+/* Highlight the "current" day */
+.days li .meeting {
+    padding: 5px;
+    padding-left: 45px;
+    padding-right: 50px;
+    background: #3a5dd1;
     color: white !important
 }
