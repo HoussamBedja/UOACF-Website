@@ -5,6 +5,16 @@ header.intro-header {
     
 }
 
+/*
+hr {
+  clear:both;
+  display:block;
+  width: 100%;               
+  background-color:#000;
+  height: 20px;
+}
+*/
+
 /*CSS for image flip*/
 
 /* entire container, keeps perspective */
@@ -17,8 +27,8 @@ header.intro-header {
 	}
 
 .flip-container, .front, .back {
-	width: 236px;
-	height: 236px;
+	width: 245px;
+	height: 245px;
 }
 
 /* flip speed goes here */
@@ -49,4 +59,5 @@ header.intro-header {
 .back {
 	transform: rotateY(180deg);
     background-color: #eef2f5;
+    
 }
