@@ -89,3 +89,11 @@ body {font-family: Verdana, sans-serif;}
     background: #3a5dd1;
     color: white !important
 }
+/* Highlight the "current" day */
+.days li .pjday {
+    padding: 5px;
+    padding-left: 45px;
+    padding-right: 50px;
+    background: #89e84d;
+    color: white !important
+}
