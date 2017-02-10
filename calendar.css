@@ -97,3 +97,6 @@ body {font-family: Verdana, sans-serif;}
     background: #89e84d;
     color: white !important
 }
+.days li .event:hover {
+    background: #31b0d5;
+}
